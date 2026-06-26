@@ -1,4 +1,3 @@
-
 package com.splitwise.splitwise.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
@@ -9,7 +8,7 @@ public class CreateGroupRequest {
     @NotBlank(message = "Group name is required")
     private String name;
 
-    private List<Long> memberIds; // user ids to add to group
+    private List<Long> memberIds;
 
     public CreateGroupRequest() {}
 

@@ -46,6 +46,8 @@ public class Expense {
     }
     public double getAmount() { return amount; }
     public List<ExpenseSplit> getSplits() { return splits; }
-
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 }

@@ -35,8 +35,8 @@ public class GroupService {
             }
         }
 
-        groupRepository.save(group);
-        return toResponse(group);
+        Group saved = groupRepository.save(group);
+        return toResponse(saved);
     }
 
     public List<GroupResponse> getUserGroups(Long userId) {

@@ -49,8 +49,8 @@ public class ExpenseService {
                 expense.addSplit(split);
             }
         }
-        expenseRepository.save(expense);
-        return toResponse(expense);
+        Expense saved = expenseRepository.save(expense);
+        return toResponse(saved);
     }
 
     public List<ExpenseResponse> getGroupExpenses(Long groupId) {

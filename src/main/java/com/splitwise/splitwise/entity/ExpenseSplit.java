@@ -39,5 +39,8 @@ public class ExpenseSplit {
     public void settle(){
         isPaid = true;
     }
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
 

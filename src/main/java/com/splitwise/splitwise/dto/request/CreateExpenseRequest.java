@@ -1,5 +1,7 @@
 package com.splitwise.splitwise.dto.request;
 
+import jakarta.validation.constraints.NotBlank;
+
 import java.util.*;
 
 public class CreateExpenseRequest {
@@ -10,6 +12,7 @@ groupId (Long) — which group
 splitAmongIds (List<Long>) — user ids to split among
 empty constructor, getters, setters
      */
+    @NotBlank
     private String description;
     private double amount;
     private long groupId;

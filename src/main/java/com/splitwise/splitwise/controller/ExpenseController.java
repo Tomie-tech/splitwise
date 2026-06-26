@@ -32,8 +32,6 @@ public class ExpenseController {
         return expenseService.addExpense(request,currentUser);
     }
 
-    //GET /expenses/group/{groupId} → getGroupExpenses
-    // ✅ groupId comes from URL, pass it directly to service
     @GetMapping("/group/{groupId}")
     public List<ExpenseResponse> getGroupExpenses(@PathVariable Long groupId){
         return expenseService.getGroupExpenses(groupId);

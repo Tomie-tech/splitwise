@@ -37,7 +37,9 @@ public class Group {
     public String getName() { return name; }
     public User getCreatedBy() { return createdBy; }
     public List<User> getMembers() { return members; }
-
+    public void setId(Long id) {
+        this.id = id;
+    }
     public void addMember(User user) {
         members.add(user);
     }
